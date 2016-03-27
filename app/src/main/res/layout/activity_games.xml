@@ -1,223 +1,395 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.marina.games.MainActivity">
-
-    <ImageView
-        android:id="@+id/img_bg_game"
+    android:layout_height="match_parent">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@drawable/background_games"/>
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.marina.games.MainActivity">
 
+        <RelativeLayout
+            android:id="@+id/relative_layout_owner"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@color/colorWhite">
 
+            <ImageView
+                android:id="@+id/img_bg_game"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/background_games"/>
 
-    <TextView
-        android:id="@+id/txt_name_owner_games"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_name"
-        android:textSize="@dimen/text_size"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:textColor="@color/colorBlack"
-        android:layout_below="@+id/img_bg_game"/>
+            <ImageView
+                android:id="@+id/img_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/ic_owner" />
 
-    <TextView
-        android:id="@+id/txt_level_game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_level"
-        android:layout_alignTop="@id/txt_name_owner_games"
-        android:layout_alignBottom="@id/txt_name_owner_games"
-        android:layout_alignParentRight ="true"
-        android:textColor="@color/colorDarkGreen"
-        android:layout_below="@+id/img_bg_game"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_number"
+                android:layout_alignRight="@id/img_owner"
+                android:layout_alignBottom="@id/img_owner"/>
 
-    <TextView
-        android:id="@+id/txt_description_owner_games"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_description_owner_games"
-        android:textColor="@color/colorBlack"
-        android:layout_below="@+id/txt_name_owner_games"/>
+            <TextView
+                android:id="@+id/txt_name_owner_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_name"
+                android:textSize="@dimen/text_size"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/img_bg_game"/>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_level"
-        android:layout_alignTop="@id/txt_description_owner_games"
-        android:layout_alignBottom="@id/txt_description_owner_games"
-        android:layout_alignParentRight ="true"
-        style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView
+                android:id="@+id/txt_level_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_level"
+                android:layout_alignBottom="@id/txt_name_owner_games"
+                android:layout_alignTop="@id/txt_name_owner_games"
+                android:gravity="bottom"
+                android:layout_alignParentRight ="true"
+                android:layout_marginRight="@dimen/corners"
+                android:textColor="@color/colorDarkGreen"
+                android:layout_below="@+id/img_bg_game"/>
 
-    <TextView
-        android:id="@+id/txt_header_games"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_header"
-        android:layout_marginTop="@dimen/space_header"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/colorBlack"
-        android:layout_below="@+id/txt_description_owner_games"/>
+            <TextView
+                android:id="@+id/txt_description_owner_games"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_description_owner_games"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/txt_name_owner_games"/>
 
-    <Button
-        android:id="@+id/btn_more_games"
-        android:layout_width="@dimen/btn_width"
-        android:layout_height="wrap_content"
-        android:text="@string/text_btn_more"
-        android:background="@drawable/bg_btn_game_more"
-        android:layout_alignBottom="@id/txt_header_games"
-        android:layout_alignParentRight ="true"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_level"
+                android:layout_alignTop="@id/txt_description_owner_games"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentRight ="true"
+                style="?android:attr/progressBarStyleHorizontal"/>
 
-    <LinearLayout
-        android:id="@+id/LinearLayout_games_one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_header_games"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_header_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_header"
+            android:layout_marginTop="@dimen/space_header"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/relative_layout_owner"/>
+
+        <Button
+            android:id="@+id/btn_more_games"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btn_more"
+            android:background="@drawable/bg_btn_game_more"
+            android:layout_alignBottom="@id/txt_header_games"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentRight ="true"/>
 
         <ImageButton
             android:id="@+id/btn_image_one"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_img_height"
-            android:background="@drawable/bg_game_one"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"/>
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/txt_header_games"
+            android:background="@color/colorWhite"/>
 
         <ImageButton
             android:id="@+id/btn_image_two"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_img_height"
-            android:background="@drawable/bg_game_two"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1" />
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@id/txt_header_games"
+            android:layout_centerInParent="true" />
 
         <ImageButton
-            android:id="@+id/btn_image_tree"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_img_height"
-            android:gravity="top|center"
-            android:background="@drawable/bg_gametree"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1"/>
+            android:id="@+id/btn_image_three"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/txt_header_games"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/img_game_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/btn_image_one"
+            android:layout_alignTop="@id/btn_image_one"
+            android:layout_alignLeft="@id/btn_image_one"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_one"/>
 
-    <TextView
-        android:id="@+id/txt_game_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LinearLayout_games_one"
-        android:text="@string/text_game_one"
-        android:textSize="@dimen/size_game_text"/>
+        <ImageView
+            android:id="@+id/img_game_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/btn_image_two"
+            android:layout_alignTop="@id/btn_image_two"
+            android:layout_alignLeft="@id/btn_image_two"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_two"/>
 
-    <TextView
-        android:id="@+id/txt_description_game_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_description_game_one"
-        android:layout_below="@id/txt_game_one"/>
+        <ImageView
+            android:id="@+id/img_game_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/btn_image_three"
+            android:layout_alignTop="@id/btn_image_three"
+            android:layout_alignLeft="@id/btn_image_three"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_three"/>
 
-    <TextView
-        android:id="@+id/txt_price_game_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_price"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_alignEnd="@id/txt_game_one"
-        android:layout_alignRight="@id/txt_game_one"
-        android:textColor="@color/colorGreen"
-        android:layout_below="@id/txt_description_game_one"/>
+        <TextView
+            android:id="@+id/txt_game_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_one"
+            android:layout_alignLeft="@id/img_game_one"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_one"
+            android:textSize="@dimen/size_game_text"/>
 
-    <TextView
-        android:id="@+id/txt_game_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/LinearLayout_games_one"
-        android:text="@string/text_game_two"
-        android:layout_toEndOf="@id/txt_game_one"
-        android:layout_toRightOf="@id/txt_game_one"
-        android:layout_marginLeft="@dimen/text_size"
-        android:textSize="@dimen/size_game_text"/>
+        <TextView
+            android:id="@+id/txt_description_game_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_one"
+            android:layout_below="@id/txt_game_one"
+            android:layout_alignLeft="@id/img_game_one"/>
 
-    <TextView
-        android:id="@+id/txt_description_game_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_description_game_two"
-        android:layout_below="@id/txt_game_two"
-        android:layout_alignLeft="@id/txt_game_two"/>
+        <TextView
+            android:id="@+id/txt_price_game_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price"
+            android:layout_alignBottom="@id/btn_image_one"
+            android:layout_alignRight="@id/btn_image_one"
+            android:textColor="@color/colorGreen" />
 
-    <TextView
-        android:id="@+id/txt_price_game_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_price"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_alignEnd="@id/txt_game_two"
-        android:layout_alignRight="@id/txt_game_two"
-        android:textColor="@color/colorGreen"
-        android:layout_below="@id/txt_description_game_two"/>
+        <TextView
+            android:id="@+id/txt_game_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_two"
+            android:layout_alignLeft="@id/img_game_two"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_two"
+            android:textSize="@dimen/size_game_text"/>
 
-    <TextView
-        android:id="@+id/txt_game_tree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_game_tree"
-        android:layout_below="@id/LinearLayout_games_one"
-        android:layout_toRightOf="@id/txt_game_two"
-        android:layout_marginLeft="8dp"
-        android:textSize="@dimen/size_game_text"/>
+        <TextView
+            android:id="@+id/txt_description_game_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_two"
+            android:layout_below="@id/txt_game_two"
+            android:layout_alignLeft="@id/img_game_two"/>
 
-    <TextView
-        android:id="@+id/txt_description_game_tree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_description_game_tree"
-        android:layout_below="@id/txt_game_tree"
-        android:layout_alignLeft="@id/txt_game_tree"/>
+        <TextView
+            android:id="@+id/txt_price_game_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price"
+            android:layout_alignBottom="@id/btn_image_two"
+            android:layout_alignRight="@id/btn_image_two"
+            android:textColor="@color/colorGreen" />
 
-    <TextView
-        android:id="@+id/txt_price_game_tree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_price_two"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/colorGreen"
-        android:layout_below="@id/txt_description_game_tree"/>
 
-    <LinearLayout
-        android:id="@+id/LinearLayout_games_two"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/txt_price_game_one">
+        <TextView
+            android:id="@+id/txt_game_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_three"
+            android:layout_alignLeft="@id/img_game_three"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_tree"
+            android:textSize="@dimen/size_game_text"/>
+
+        <TextView
+            android:id="@+id/txt_description_game_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_tree"
+            android:layout_below="@id/txt_game_three"
+            android:layout_alignLeft="@id/img_game_three"/>
+
+        <TextView
+            android:id="@+id/txt_price_game_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price_two"
+            android:layout_alignBottom="@id/btn_image_three"
+            android:layout_alignRight="@id/btn_image_three"
+            android:textColor="@color/colorGreen" />
 
         <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_gamefour" />
+            android:id="@+id/img_btn_four"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/btn_image_one"
+            android:layout_marginBottom="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@color/colorWhite"/>
 
         <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_gamefour"/>
+            android:id="@+id/img_btn_five"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/corners"
+            android:layout_below="@id/btn_image_two"
+            android:layout_centerInParent="true" />
 
         <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_gamefour"
-            android:layout_weight="1"/>
+            android:id="@+id/img_btn_six"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/btn_image_three"
+            android:layout_marginTop="@dimen/corners"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/img_game_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/img_btn_four"
+            android:layout_alignTop="@id/img_btn_four"
+            android:layout_alignLeft="@id/img_btn_four"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_four"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txt_game_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_four"
+            android:layout_alignLeft="@id/img_game_four"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_one"
+            android:textSize="@dimen/size_game_text"/>
+
+        <TextView
+            android:id="@+id/txt_description_game_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_one"
+            android:layout_below="@id/txt_game_four"
+            android:layout_alignLeft="@id/img_game_four"/>
+
+        <TextView
+            android:id="@+id/txt_price_game_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price"
+            android:layout_alignBottom="@id/img_btn_four"
+            android:layout_alignRight="@id/img_btn_four"
+            android:textColor="@color/colorGreen" />
+
+        <ImageView
+            android:id="@+id/img_game_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/img_btn_five"
+            android:layout_alignTop="@id/img_btn_five"
+            android:layout_alignLeft="@id/img_btn_five"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_four"/>
+
+        <TextView
+            android:id="@+id/txt_game_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_five"
+            android:layout_alignLeft="@id/img_game_five"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_two"
+            android:textSize="@dimen/size_game_text"/>
+
+        <TextView
+            android:id="@+id/txt_description_game_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_two"
+            android:layout_below="@id/txt_game_five"
+            android:layout_alignLeft="@id/img_game_five"/>
+
+        <TextView
+            android:id="@+id/txt_price_game_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price"
+            android:layout_alignBottom="@id/img_btn_five"
+            android:layout_alignRight="@id/img_btn_five"
+            android:textColor="@color/colorGreen" />
+
+        <ImageView
+            android:id="@+id/img_game_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/img_btn_six"
+            android:layout_alignTop="@id/img_btn_six"
+            android:layout_alignLeft="@id/img_btn_six"
+            android:layout_marginRight="@dimen/corners"
+            android:layout_marginLeft="@dimen/corners"
+            android:layout_marginTop="@dimen/corners"
+            android:background="@drawable/bg_game_four"/>
+
+        <TextView
+            android:id="@+id/txt_game_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_game_six"
+            android:layout_alignLeft="@id/img_game_six"
+            android:layout_marginTop="@dimen/corners"
+            android:text="@string/text_game_tree"
+            android:textSize="@dimen/size_game_text"/>
+
+        <TextView
+            android:id="@+id/txt_description_game_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_description_game_tree"
+            android:layout_below="@id/txt_game_six"
+            android:layout_alignLeft="@id/img_game_six"/>
+
+        <TextView
+            android:id="@+id/txt_price_game_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_price_two"
+            android:layout_alignBottom="@id/img_btn_six"
+            android:layout_alignRight="@id/img_btn_six"
+            android:textColor="@color/colorGreen" />
+
+    </RelativeLayout>
+
+</ScrollView>

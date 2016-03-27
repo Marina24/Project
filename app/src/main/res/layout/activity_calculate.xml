@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="bottom"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:columnCount="9"
     android:rowCount="10"
@@ -38,7 +38,7 @@
         android:background="@drawable/btn_bground"
         style="?android:attr/borderlessButtonStyle" />
     <Button
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
         android:layout_gravity="fill"
         android:layout_rowSpan="2"
         android:id="@+id/btn_del"
@@ -78,7 +78,7 @@
         android:background="@drawable/btn_bground"
         style="?android:attr/borderlessButtonStyle" />
     <Button
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
         android:layout_gravity="fill"
         android:layout_rowSpan="1"
         android:id="@+id/btn_div"
@@ -88,7 +88,7 @@
         android:background="@drawable/btn_bground_light"
         style="?android:attr/borderlessButtonStyle" />
     <Button
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
         android:layout_gravity="fill"
         android:layout_rowSpan="1"
         android:id="@+id/btn_multi"
@@ -128,7 +128,7 @@
         android:background="@drawable/btn_bground"
         style="?android:attr/borderlessButtonStyle" />
     <Button
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
         android:layout_gravity="fill"
         android:layout_rowSpan="2"
         android:id="@+id/btn_min"
@@ -168,7 +168,7 @@
         android:background="@drawable/btn_bground"
         style="?android:attr/borderlessButtonStyle" />
     <Button
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
         android:layout_gravity="fill"
         android:layout_rowSpan="2"
         android:id="@+id/btn_plus"

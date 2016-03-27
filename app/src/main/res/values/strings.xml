@@ -62,5 +62,12 @@
     <string name="info_game">Фил — очень милый, но неуклюжий миньон, который умудрился затопить корабль своих друзей. Теперь ему предстоит превратить необитаемый остров в райский уголок. Создатели мультфильма "Миньоны" — Illumination Entertainment — и EA приглашают тебя в невероятное приключение с любимыми героями!</string>
     <string name="action_read_more">ЧИТАТЬ ДАЛЬШЕ</string>
     <string name="tab_rating">Оценить приложение</string>
+    <string name="text_user_name">Username</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_profile_name">Profile Name</string>
+    <string name="action_sign_up">SIGN UP</string>
+    <string name="action_qustion">Have an account already?</string>
+    <string name="text_time">00ч.00м.00с.</string>
 </resources>
 
