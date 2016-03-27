@@ -90,12 +90,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/view_separator"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_saving_count"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:paddingLeft="@dimen/corners"
+                android:paddingRight="@dimen/corners"
                 android:drawableTop="@drawable/ic_saving_count"
                 android:text="@string/text_saving_count"
                 android:textSize="@dimen/text_size_litle"
@@ -107,6 +111,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/text_rating_stars"
+                android:paddingLeft="@dimen/corners"
+                android:paddingRight="@dimen/corners"
                 android:drawableTop="@drawable/ic_rating_stars"
                 android:textSize="@dimen/text_size_litle"
                 style="?attr/borderlessButtonStyle"
@@ -119,6 +125,8 @@
                 android:text="@string/text_link"
                 android:drawableTop="@drawable/ic_link"
                 style="?attr/borderlessButtonStyle"
+                android:paddingLeft="@dimen/corners"
+                android:paddingRight="@dimen/corners"
                 android:textSize="@dimen/text_size_litle"
                 android:layout_weight="1" />
 
@@ -129,6 +137,8 @@
                 android:text="@string/text_similar_games"
                 android:drawableTop="@drawable/ic_similar_games"
                 android:textSize="@dimen/text_size_litle"
+                android:paddingLeft="@dimen/corners"
+                android:paddingRight="@dimen/corners"
                 android:layout_weight="1"
                 style="?attr/borderlessButtonStyle"/>
 
@@ -229,6 +239,9 @@
             android:id="@+id/rating_game"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/corners"
             android:layout_below="@id/txt_tab_rating"/>
 
         <View
