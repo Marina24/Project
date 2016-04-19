@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="horizontal_margin">8dp</dimen>
-    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size">18sp</dimen>
     <dimen name="properties_size">18sp</dimen>
     <dimen name="margin_game_name">30dp</dimen>
     <dimen name="btn_width">65dp</dimen>
@@ -17,4 +17,13 @@
     <dimen name="size_ic">20dp</dimen>
     <dimen name="size_time">45sp</dimen>
     <dimen name="size_number">30sp</dimen>
+    <dimen name="number_size">36sp</dimen>
+    <dimen name="number_height">90dp</dimen>
+    <dimen name="space_height">220dp</dimen>
+    <dimen name="number_height_light">70dp</dimen>
+    <dimen name="img_game_width">110dp</dimen>
+    <dimen name="img_game_height">200dp</dimen>
+    <dimen name="img_games_height">150dp</dimen>
+    <dimen name="view_size">1dp</dimen>
+    <dimen name="image_game_height">250dp</dimen>
 </resources>

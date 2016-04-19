@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:id="@+id/linear_layout_time"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_timer"
-            style="?attr/borderlessButtonStyle"/>
+            android:src="@drawable/ic_alarm_white" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_timer"
-            style="?attr/borderlessButtonStyle"/>
+            android:src="@drawable/ic_query_builder_white" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_timer"
-            style="?attr/borderlessButtonStyle"/>
+            android:src="@drawable/ic_hourglass_full" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_timer"
-            style="?attr/borderlessButtonStyle"/>
+            android:src="@drawable/ic_timer_white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert_white" />
 
     </LinearLayout>
 
@@ -43,15 +46,16 @@
         android:id="@+id/edit_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_time"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/space_header"
-        android:hint="@string/text_time"
-        android:textColorHint="@color/colorWhite"
-        android:textSize="@dimen/size_time"
-        android:inputType="time"
+        android:drawableRight="@drawable/ic_backspace_white"
         android:ems="10"
-        android:layout_below="@id/linear_layout_time" />
+        android:hint="@string/text_time"
+        android:inputType="time"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/size_time" />
 
     <TableRow
         android:id="@+id/table_line_first"
@@ -64,33 +68,33 @@
 
         <Button
             android:id="@+id/btn_time_one"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_one"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_two"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_two"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_three"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_three"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
     </TableRow>
 
@@ -105,33 +109,33 @@
 
         <Button
             android:id="@+id/btn_time_four"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_four"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_five"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_five"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_six"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_six"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
     </TableRow>
 
@@ -146,46 +150,46 @@
 
         <Button
             android:id="@+id/btn_time_seven"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_seven"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_eight"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_eight"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
         <Button
             android:id="@+id/btn_time_nine"
+            style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/text_btn_nine"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/size_number"
-            style="?attr/borderlessButtonStyle"/>
+            android:textSize="@dimen/size_number" />
 
     </TableRow>
 
     <Button
         android:id="@+id/btn_time_zero"
+        style="?attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_btn_zero"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/size_number"
         android:layout_below="@id/table_line_three"
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
-        style="?attr/borderlessButtonStyle"/>
+        android:text="@string/text_btn_zero"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_number" />
 
 </RelativeLayout>

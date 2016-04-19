@@ -15,7 +15,7 @@
         android:text="@string/text_btn_seven"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -25,7 +25,7 @@
         android:text="@string/text_btn_eight"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -35,7 +35,7 @@
         android:text="@string/text_btn_nine"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="3"
@@ -45,7 +45,7 @@
         android:text="@string/text_btn_del"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
-        android:background="@drawable/btn_bground_light"
+        android:background="@color/colorLightGray"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -55,7 +55,7 @@
         android:text="@string/text_btn_four"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -65,7 +65,7 @@
         android:text="@string/text_btn_five"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -75,7 +75,7 @@
         android:text="@string/text_btn_six"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="3"
@@ -85,7 +85,7 @@
         android:text="@string/text_btn_div"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
-        android:background="@drawable/btn_bground_light"
+        android:background="@color/colorLightGray"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="3"
@@ -95,7 +95,7 @@
         android:text="@string/text_btn_multi"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
-        android:background="@drawable/btn_bground_light"
+        android:background="@color/colorLightGray"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -105,7 +105,7 @@
         android:text="@string/text_btn_one"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -115,7 +115,7 @@
         android:text="@string/text_btn_two"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -125,7 +125,7 @@
         android:text="@string/text_btn_three"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="3"
@@ -135,7 +135,7 @@
         android:text="@string/text_btn_minus"
         android:textColor="@color/colorWhite"
         android:textSize="32sp"
-        android:background="@drawable/btn_bground_light"
+        android:background="@color/colorLightGray"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -145,7 +145,7 @@
         android:text="@string/text_btn_comma"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -155,7 +155,7 @@
         android:text="@string/text_btn_zero"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="2"
@@ -165,7 +165,7 @@
         android:text="@string/text_btn_equally"
         android:textColor="@color/colorWhite"
         android:textSize="36sp"
-        android:background="@drawable/btn_bground"
+        android:background="@color/colorGrey"
         style="?android:attr/borderlessButtonStyle" />
     <Button
         android:layout_columnSpan="3"
@@ -175,7 +175,7 @@
         android:text="@string/text_btn_plus"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
-        android:background="@drawable/btn_bground_light"
+        android:background="@color/colorLightGray"
         style="?android:attr/borderlessButtonStyle" />
 
     <Space

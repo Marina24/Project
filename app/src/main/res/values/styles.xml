@@ -8,4 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ButtonNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/number_height</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/number_size</item>
+        <item name="android:background">@color/colorGrey</item>
+    </style>
+
+    <style name="ButtonNumberLight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/number_height_light</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorLightGray</item>
+    </style>
+
+    <style name="ImageButtonGame">
+        <item name="android:layout_height">@dimen/img_game_height</item>
+        <item name="android:layout_width">@dimen/img_game_width</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
 </resources>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,7 +22,7 @@
                 android:id="@+id/img_bg_game"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:background="@drawable/background_games"/>
+                android:background="@drawable/background_games" />
 
             <ImageView
                 android:id="@+id/img_owner"
@@ -35,52 +36,52 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_number"
+                android:layout_alignBottom="@id/img_owner"
                 android:layout_alignRight="@id/img_owner"
-                android:layout_alignBottom="@id/img_owner"/>
+                android:background="@drawable/ic_number" />
 
             <TextView
                 android:id="@+id/txt_name_owner_games"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_name"
-                android:textSize="@dimen/text_size"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/img_bg_game"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/text_name"
                 android:textColor="@color/colorBlack"
-                android:layout_below="@+id/img_bg_game"/>
+                android:textSize="@dimen/text_size" />
 
             <TextView
                 android:id="@+id/txt_level_game"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_level"
                 android:layout_alignBottom="@id/txt_name_owner_games"
+                android:layout_alignParentRight="true"
                 android:layout_alignTop="@id/txt_name_owner_games"
-                android:gravity="bottom"
-                android:layout_alignParentRight ="true"
+                android:layout_below="@+id/img_bg_game"
                 android:layout_marginRight="@dimen/corners"
-                android:textColor="@color/colorDarkGreen"
-                android:layout_below="@+id/img_bg_game"/>
+                android:gravity="bottom"
+                android:text="@string/text_level"
+                android:textColor="@color/colorDarkGreen" />
 
             <TextView
                 android:id="@+id/txt_description_owner_games"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_description_owner_games"
-                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/txt_name_owner_games"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_below="@+id/txt_name_owner_games"/>
+                android:text="@string/text_description_owner_games"
+                android:textColor="@color/colorBlack" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_level"
+                android:layout_alignParentRight="true"
                 android:layout_alignTop="@id/txt_description_owner_games"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_alignParentRight ="true"
-                style="?android:attr/progressBarStyleHorizontal"/>
+                android:text="@string/text_level" />
 
         </RelativeLayout>
 
@@ -88,134 +89,128 @@
             android:id="@+id/txt_header_games"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_header"
-            android:layout_marginTop="@dimen/space_header"
-            android:textSize="@dimen/text_size"
-            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/relative_layout_owner"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_below="@+id/relative_layout_owner"/>
+            android:layout_marginTop="@dimen/space_header"
+            android:text="@string/text_header"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size" />
 
         <Button
             android:id="@+id/btn_more_games"
             android:layout_width="@dimen/btn_width"
             android:layout_height="wrap_content"
-            android:text="@string/text_btn_more"
-            android:background="@drawable/bg_btn_game_more"
             android:layout_alignBottom="@id/txt_header_games"
-            android:textColor="@color/colorWhite"
-            android:layout_alignParentRight ="true"/>
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_game_more"
+            android:text="@string/text_btn_more"
+            android:textColor="@color/colorWhite" />
 
         <ImageButton
             android:id="@+id/btn_image_one"
-            android:layout_width="110dp"
-            android:layout_height="200dp"
             android:layout_below="@id/txt_header_games"
-            android:background="@color/colorWhite"/>
+            style="@style/ImageButtonGame" />
 
         <ImageButton
             android:id="@+id/btn_image_two"
-            android:layout_width="110dp"
-            android:layout_height="200dp"
-            android:background="@color/colorWhite"
             android:layout_below="@id/txt_header_games"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            style="@style/ImageButtonGame"/>
 
         <ImageButton
             android:id="@+id/btn_image_three"
-            android:layout_width="110dp"
-            android:layout_height="200dp"
-            android:layout_below="@id/txt_header_games"
             android:layout_alignParentRight="true"
-            android:background="@color/colorWhite" />
+            android:layout_below="@id/txt_header_games"
+            style="@style/ImageButtonGame" />
 
         <ImageView
             android:id="@+id/img_game_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_image_one"
             android:layout_alignRight="@id/btn_image_one"
             android:layout_alignTop="@id/btn_image_one"
-            android:layout_alignLeft="@id/btn_image_one"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_one"/>
+            android:background="@drawable/bg_game_one" />
 
         <ImageView
             android:id="@+id/img_game_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_image_two"
             android:layout_alignRight="@id/btn_image_two"
             android:layout_alignTop="@id/btn_image_two"
-            android:layout_alignLeft="@id/btn_image_two"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_two"/>
+            android:background="@drawable/bg_game_two" />
 
         <ImageView
             android:id="@+id/img_game_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_image_three"
             android:layout_alignRight="@id/btn_image_three"
             android:layout_alignTop="@id/btn_image_three"
-            android:layout_alignLeft="@id/btn_image_three"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_three"/>
+            android:background="@drawable/bg_game_three" />
 
         <TextView
             android:id="@+id/txt_game_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_one"
             android:layout_alignLeft="@id/img_game_one"
+            android:layout_below="@id/img_game_one"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_one"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_one"
+            android:layout_alignLeft="@id/img_game_one"
             android:layout_below="@id/txt_game_one"
-            android:layout_alignLeft="@id/img_game_one"/>
+            android:text="@string/text_description_game_one" />
 
         <TextView
             android:id="@+id/txt_price_game_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price"
             android:layout_alignBottom="@id/btn_image_one"
             android:layout_alignRight="@id/btn_image_one"
+            android:text="@string/text_price"
             android:textColor="@color/colorGreen" />
 
         <TextView
             android:id="@+id/txt_game_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_two"
             android:layout_alignLeft="@id/img_game_two"
+            android:layout_below="@id/img_game_two"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_two"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_two"
+            android:layout_alignLeft="@id/img_game_two"
             android:layout_below="@id/txt_game_two"
-            android:layout_alignLeft="@id/img_game_two"/>
+            android:text="@string/text_description_game_two" />
 
         <TextView
             android:id="@+id/txt_price_game_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price"
             android:layout_alignBottom="@id/btn_image_two"
             android:layout_alignRight="@id/btn_image_two"
+            android:text="@string/text_price"
             android:textColor="@color/colorGreen" />
 
 
@@ -223,171 +218,167 @@
             android:id="@+id/txt_game_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_three"
             android:layout_alignLeft="@id/img_game_three"
+            android:layout_below="@id/img_game_three"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_tree"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_tree"
+            android:layout_alignLeft="@id/img_game_three"
             android:layout_below="@id/txt_game_three"
-            android:layout_alignLeft="@id/img_game_three"/>
+            android:text="@string/text_description_game_tree" />
 
         <TextView
             android:id="@+id/txt_price_game_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price_two"
             android:layout_alignBottom="@id/btn_image_three"
             android:layout_alignRight="@id/btn_image_three"
+            android:text="@string/text_price_two"
             android:textColor="@color/colorGreen" />
 
         <ImageButton
             android:id="@+id/img_btn_four"
-            android:layout_width="110dp"
-            android:layout_height="200dp"
             android:layout_below="@id/btn_image_one"
             android:layout_marginBottom="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@color/colorWhite"/>
+            style="@style/ImageButtonGame" />
 
         <ImageButton
             android:id="@+id/img_btn_five"
-            android:layout_width="110dp"
-            android:layout_height="200dp"
-            android:background="@color/colorWhite"
-            android:layout_marginTop="@dimen/corners"
             android:layout_below="@id/btn_image_two"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/corners"
+            style="@style/ImageButtonGame" />
 
         <ImageButton
             android:id="@+id/img_btn_six"
             android:layout_width="110dp"
             android:layout_height="200dp"
+            android:layout_alignParentRight="true"
             android:layout_below="@id/btn_image_three"
             android:layout_marginTop="@dimen/corners"
-            android:layout_alignParentRight="true"
             android:background="@color/colorWhite" />
 
         <ImageView
             android:id="@+id/img_game_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_btn_four"
             android:layout_alignRight="@id/img_btn_four"
             android:layout_alignTop="@id/img_btn_four"
-            android:layout_alignLeft="@id/img_btn_four"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_four"/>
+            android:background="@drawable/bg_game_four" />
 
         <TextView
             android:id="@+id/txt_game_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_four"
             android:layout_alignLeft="@id/img_game_four"
+            android:layout_below="@id/img_game_four"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_one"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_one"
+            android:layout_alignLeft="@id/img_game_four"
             android:layout_below="@id/txt_game_four"
-            android:layout_alignLeft="@id/img_game_four"/>
+            android:text="@string/text_description_game_one" />
 
         <TextView
             android:id="@+id/txt_price_game_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price"
             android:layout_alignBottom="@id/img_btn_four"
             android:layout_alignRight="@id/img_btn_four"
+            android:text="@string/text_price"
             android:textColor="@color/colorGreen" />
 
         <ImageView
             android:id="@+id/img_game_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_btn_five"
             android:layout_alignRight="@id/img_btn_five"
             android:layout_alignTop="@id/img_btn_five"
-            android:layout_alignLeft="@id/img_btn_five"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_four"/>
+            android:background="@drawable/bg_game_four" />
 
         <TextView
             android:id="@+id/txt_game_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_five"
             android:layout_alignLeft="@id/img_game_five"
+            android:layout_below="@id/img_game_five"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_two"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_two"
+            android:layout_alignLeft="@id/img_game_five"
             android:layout_below="@id/txt_game_five"
-            android:layout_alignLeft="@id/img_game_five"/>
+            android:text="@string/text_description_game_two" />
 
         <TextView
             android:id="@+id/txt_price_game_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price"
             android:layout_alignBottom="@id/img_btn_five"
             android:layout_alignRight="@id/img_btn_five"
+            android:text="@string/text_price"
             android:textColor="@color/colorGreen" />
 
         <ImageView
             android:id="@+id/img_game_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_btn_six"
             android:layout_alignRight="@id/img_btn_six"
             android:layout_alignTop="@id/img_btn_six"
-            android:layout_alignLeft="@id/img_btn_six"
-            android:layout_marginRight="@dimen/corners"
             android:layout_marginLeft="@dimen/corners"
+            android:layout_marginRight="@dimen/corners"
             android:layout_marginTop="@dimen/corners"
-            android:background="@drawable/bg_game_four"/>
+            android:background="@drawable/bg_game_four" />
 
         <TextView
             android:id="@+id/txt_game_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/img_game_six"
             android:layout_alignLeft="@id/img_game_six"
+            android:layout_below="@id/img_game_six"
             android:layout_marginTop="@dimen/corners"
             android:text="@string/text_game_tree"
-            android:textSize="@dimen/size_game_text"/>
+            android:textSize="@dimen/size_game_text" />
 
         <TextView
             android:id="@+id/txt_description_game_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_description_game_tree"
+            android:layout_alignLeft="@id/img_game_six"
             android:layout_below="@id/txt_game_six"
-            android:layout_alignLeft="@id/img_game_six"/>
+            android:text="@string/text_description_game_tree" />
 
         <TextView
             android:id="@+id/txt_price_game_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_price_two"
             android:layout_alignBottom="@id/img_btn_six"
             android:layout_alignRight="@id/img_btn_six"
+            android:text="@string/text_price_two"
             android:textColor="@color/colorGreen" />
 
     </RelativeLayout>
